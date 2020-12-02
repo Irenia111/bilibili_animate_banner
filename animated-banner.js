@@ -58,9 +58,9 @@ async function blink () {
     // console.log(img.src)
     const blinkImges = ["./src/bilibili_1_1.png", "./src/bilibili_1_2.png","./src/bilibili_1_0.png"]
     
-    await sleep(250)
+    await sleep(50)
     img.src = blinkImges[0]
-    await sleep(250)
+    await sleep(50)
     img.src = blinkImges[1]
     await sleep(350)
     img.src = blinkImges[2]
