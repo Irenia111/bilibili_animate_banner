@@ -59,8 +59,8 @@ async function blink () {
     /* 上线后无法加载，换成网络资源url
     const blinkImges = ["./src/bilibili_1_1.png", "./src/bilibili_1_2.png","./src/bilibili_1_0.png"]
     */
-   const rootURL = 'https://irenia111.github.io/bilibili_animate_banner/src/'
-    const blinkImges = ["bilibili_1_1.png", "bilibili_1_2.png","bilibili_1_0.png"]
+   const rootURL = ''
+    const blinkImges = ["src/bilibili_1_1.png", "src/bilibili_1_2.png","src/bilibili_1_0.png"]
     await sleep(50)
     img.src = rootURL + blinkImges[0]
     await sleep(50)
