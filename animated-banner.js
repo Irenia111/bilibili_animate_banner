@@ -66,7 +66,7 @@ async function blink () {
     "https://i0.hdslb.com/bfs/vc/082e39ef757826401ef82da818310d42e05bc2de.png"]
     */
 
-    const blinkImges = ["./src/bilibili_1_1.png", "./src/bilibili_1_2.png","./src/bilibili_1_0.png"]
+    const blinkImges = ["src/bilibili_1_1.png", "src/bilibili_1_2.png","src/bilibili_1_0.png"]
 
     await sleep(50)
     img.src = blinkImges[0]
