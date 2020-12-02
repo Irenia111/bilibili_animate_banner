@@ -1,0 +1,60 @@
+.animated-banner {
+    height: 160px;
+    /* 设置最小宽度后，resize就不会影响图片的定位了 */
+    min-width: 999px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animated-banner > .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    --offset: 0px;
+    --blur: 2px;
+    --time: 0s;
+}
+.animated-banner > .layer > img {
+    display: block;
+    /* 因为聚焦效果有左右移动的效果，所以图片需要放大一点 */
+    width: 110%;
+    height: 100%;
+    /* 图片以原比例填满容器 */
+    object-fit: cover;
+    
+    /* 增强体验感，鼠标移出后有变换的时间缓冲 */
+    transition-duration: var(--time);
+    transform: translate(var(--offset));
+    filter: blur(var(--blur));
+}
+
+/* logo 的处理 */
+.animated-banner > .logo {
+    position: relative;
+    width: 999px;
+    height: 100%;
+}
+.animated-banner > .logo > a {
+    position: absolute;
+    height: 50%;
+    width: 200px;
+    bottom: 10px;
+}
+.animated-banner > .logo > a > img {
+    height: 100%;
+    vertical-align: middle;
+    border-style: none;
+}
+
