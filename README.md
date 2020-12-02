@@ -10,9 +10,5 @@
 ### 3. window resiz，通过 min-width 保存适配
 
 
-🐿 在线demo 🐿: <a></a>
-
-
-
-
+<a href="https://irenia111.github.io/bilibili_animate_banner/bilibiliBanner">🐿 在线demo 🐿</a>
 
