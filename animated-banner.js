@@ -56,14 +56,17 @@ const sleep = (time) => {
 async function blink () {
     const img = images[1]
     // console.log(img.src)
+    /* 上线后无法加载，换成网络资源url
     const blinkImges = ["./src/bilibili_1_1.png", "./src/bilibili_1_2.png","./src/bilibili_1_0.png"]
-    
+    */
+   const rootURL = 'https://irenia111.github.io/bilibili_animate_banner/src/'
+    const blinkImges = ["bilibili_1_1.png", "bilibili_1_2.png","bilibili_1_0.png"]
     await sleep(50)
-    img.src = blinkImges[0]
+    img.src = rootURL + blinkImges[0]
     await sleep(50)
-    img.src = blinkImges[1]
+    img.src = rootURL + blinkImges[1]
     await sleep(350)
-    img.src = blinkImges[2]
+    img.src = rootURL + blinkImges[2]
     setTimeout(blink, 5000)   
 }
 setTimeout(blink, 5000)
