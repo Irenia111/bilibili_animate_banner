@@ -57,10 +57,12 @@ async function blink () {
     const img = images[1]
     // console.log(img.src)
     /* 上线后无法加载，换成网络资源url
-    不能写相对路径 (*￣︶￣)
+    github 上的资源可以用，但是太慢了。。。换成bilibili的
     const blinkImges = ["./src/bilibili_1_1.png", "./src/bilibili_1_2.png","./src/bilibili_1_0.png"]
     */
-    const blinkImges = ["src/bilibili_1_1.png", "src/bilibili_1_2.png","src/bilibili_1_0.png"]
+    const blinkImges = ["https://i0.hdslb.com/bfs/vc/f1892bc119b722c3cda5b26269c292a90a9f5f06.png", 
+    "https://i0.hdslb.com/bfs/vc/173eafe211b4671e5aff059a1834f3e4579c7a5d.png",
+    "https://i0.hdslb.com/bfs/vc/082e39ef757826401ef82da818310d42e05bc2de.png"]
     await sleep(50)
     img.src = blinkImges[0]
     await sleep(50)
